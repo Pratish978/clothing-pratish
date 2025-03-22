@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('img1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /* Ensures the image covers the whole screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.login-container {
+    background: #392e24;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    min-height: 450px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-container button {
+    width: 50%;
+    /* Adjusted size */
+    padding: 10px;
+    background-color: white;
+    color: #392e24;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-container button:hover {
+    background-color: #f4f4f4;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .login-container {
+        max-width: 90%;
+        min-height: auto;
+        padding: 30px;
+    }
+
+    .login-container h2 {
+        font-size: 24px;
+    }
+
+    .login-container input,
+    .login-container button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
